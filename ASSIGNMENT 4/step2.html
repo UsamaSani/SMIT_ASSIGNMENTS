@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step2</title>
+</head>
+<body>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li{
+            list-style: none;
+            margin: 1rem;
+            background-color: grey;
+            padding: 1rem;
+            font-weight: bolder;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 50%;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 1px solid #e3c60d;
+            margin-bottom: 0.5rem;
+
+        }
+        fieldset{
+            border: 2px solid #e3c60d;
+        }
+        legend{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        label{
+            font-weight: bolder;
+        }
+        .blue{
+            background-color: rgb(0, 123, 255);
+            color: white;
+        }
+        .green{
+            background-color: rgb(4, 107, 4);
+            color: white;
+        }
+        .btn{
+            display: flex;
+            flex-direction: initial;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            background-color: rgb(4, 107, 4);
+            padding: 1rem;
+            margin-left: 1rem;
+            border-radius: 1rem;
+        }
+        .cnic{
+            width: 1%;
+            border: 2px solid #e3c60d;
+        }
+        .cnic-box{
+            display: flex;
+            flex-direction: initial;
+            justify-content: center;
+        }
+        hr{
+            display: flex;
+            flex-direction: column;
+            border-bottom:  1px  solid black;
+            width: 1%;
+        }
+    </style>
+    <div>
+    <ul>
+        <li class="green">Step1: Account</li>
+        <li class="blue">Step2: Personal Details</li>
+        <li>Step3: Your Review</li>
+    </ul>
+<fieldset>
+    <legend>Personal Details</legend>
+        <form action="">
+            <label for="Fname">First Name*</label>
+            <input type="text" id="Fname" placeholder="Enter your First name">
+            <label for="Lname">Last Name*</label>
+            <input type="text"id="Lname" placeholder="Enter your last name">
+            <label for="Cnic">CNIC*</label>
+        <div class="cnic-box">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <label for="">----</label>
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <input type="number"  id="Cnic" class="cnic">
+            <label for="">----</label>
+            <input type="number"  id="Cnic" class="cnic">
+        </div>
+        <label for="social">Social Links</label>
+        <input type="text"  id="social" placeholder="Enter facebook/linkdin/ profile link">
+            <div class="btn">
+            <a href="./step1.html">Back</a>
+            <a href="./step3.html">Next</a>
+           </div>
+        </form>
+</fieldset>
+</div>
+</body>
+</html>

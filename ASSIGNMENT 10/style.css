@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #ca6701;
+}
+@keyframes zoomIn {
+    0% {
+      transform: scale(0); 
+      opacity: 0; 
+    }
+    100% {
+      transform: scale(1); 
+      opacity: 1; 
+    }
+  }
+  
+  picture img {
+    animation: zoomIn 1.5s ease;
+    width: 100% !important;
+  }
+  
+picture{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    padding: 1rem;
+    background-color: #e9d8a6;
+}
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.logo img{
+    width: 4rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.logo h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.logo h1 span{
+    font-size: 1rem;
+    align-items: center;
+}
+.nav-btn{
+    flex-basis: 48%;
+}
+.nav-btn a{
+    text-decoration: none;
+    background-color: #9a2226;
+    color: white;
+    display: block;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    margin: 6px;
+    transition: background-color 0.3s ease;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.mission h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.logo1 img{
+    width: 8rem;
+}
+.para p{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.popular{
+    display: flex;
+    flex-direction: column;
+    background-color: #005f73;
+    padding-top: 3rem;
+}
+.popular h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fork{
+    background-color: #bb3e03;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+.si{
+    background-position: center;
+    background-size: cover;
+    width: 99%;
+    height: 20rem;
+    display: flex;
+    align-items: end;
+    
+}
+.si p{
+    background-color: white;
+    opacity: 0.8;
+    padding: 1rem;
+    width: 100%;
+}
+.si img{
+    width: 30rem;
+
+}
+.forki{
+    background-image: url(./ASSETS/fork-it-up.jpg);
+
+}
+.car{
+    background-color: #ca6701;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+.cari{
+    background-image: url(./ASSETS/eyeing-you.jpg);
+
+}
+.scooter{
+    background-color: #93d28d;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+.scooteri{
+    background-image: url(./ASSETS/lets-scoot.jpg);
+
+}
+.featured{
+    background-color: #dbe4de;
+}
+.featured h1{
+    color: black;
+}
+.gb{
+    background-color: #ee9800;
+}
+.glasses{
+    background-image: url(./ASSETS/too-cool-300.jpg) !important;
+    /* background-position: center;
+    background-size: cover; */
+}
+.Collections{
+    background-color: #dbe4de;
+}
+.Collections h1{
+    color: black;
+}
+.ic{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+} 
+.popi{
+    background-image: url(./ASSETS/pop-art.jpg);
+}
+.abstracti{
+    background-image: url(./ASSETS/abstract.jpg);
+}
+.vividi{
+    background-image: url(./ASSETS/vivid.jpg);
+}
+.musici{
+    background-image: url(./ASSETS/music.jpg);
+}
+.vehiclesi{
+    background-image: url(./ASSETS/vehicles.jpg);
+}
+.landscapei{
+    background-image: url(./ASSETS/landscape.jpg);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9d8a6;
+    padding: 1rem;
+}
+.copyrights{
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+.connect{
+    width: 100%;
+    margin: 1rem;
+}
+.adr{
+    width: 100%;
+    margin: 1rem;
+}
+@media screen and (min-width: 500px) and (max-width: 820px){
+    .glasses{
+        background-image: url(./ASSETS/too-cool-740.jpg) !important;
+    }
+    .images{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .popular{
+        text-align: center;
+    }
+    .popular h1{
+        width: 70%;
+    }
+    .fork{
+        width: 25%;
+    }
+    .car{width: 25%;margin-left: 1rem;}
+    .scooter{
+        width: 51.3%;
+    }
+    .gb{
+        width: 51%;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .connect{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .adr{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .fi{
+        display: flex;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 1200px) {
+    .logo img{
+        width: 5rem;
+    }
+    .nav-btn a{
+        background-color: transparent;
+        color: black;
+        box-shadow: none;
+        font-size: 1.3rem;
+        backdrop-filter: none;
+    }
+    .nav-btn{
+        flex-basis: 8%;
+    }
+    .popular{
+        text-align: center;
+    }
+    .popular h1{
+        width: 60.4%;
+    }
+    .featured h1{
+        color: black;
+        width: 60%;
+    }
+.images{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fork{
+    width: 25%;
+}
+.car{width: 25%;margin-left: 1rem;}
+.scooter{
+    width: 51.3%;
+}
+.gb{
+    width: 51%;
+}
+.glasses{
+    background-image: url(./ASSETS/too-cool-1058.jpg) !important;
+}
+footer{
+    flex-direction: row;
+}
+.connect{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adr{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.fi{
+    display: flex;
+}
+}
+
+@media screen and (min-width: 1200px){
+    .logo img{
+        width: 5rem;
+    }
+    picture img{
+        width: 90% !important;
+    }
+    .nav-btn a{
+        background-color: transparent;
+        color: black;
+        box-shadow: none;
+        font-size: 1.3rem;
+        backdrop-filter: none;
+    }
+    .nav-btn a:hover{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .logo{
+        order: 1;
+    }
+    .btnl{
+        flex-basis: 0;
+    }
+    .btnr{
+        order: 2;
+        flex-basis: 0;
+    }
+.logo{
+    flex-basis: 60% !important;
+    
+}
+.logo1 img{
+    width: 17rem;
+}
+.para{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.para p{
+    font-size: 1.3rem;
+}
+.p1{
+    margin-left: 3.2rem;
+}
+.p2{
+    margin-left: 2.2rem;
+}
+.p3{
+    margin-left: 1.2rem;
+}
+.p4{
+    margin-left: 0.9rem;
+}
+.mission{
+    justify-content: center;
+    align-items: center;
+}
+.mission h1{
+    font-size: 2.5rem;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.images{
+    flex-direction: row;
+    justify-content:center;
+}
+.popular{
+    text-align: center;
+}
+.popular h1{
+    width: 57.4%;
+}
+.fork{
+    width: 18%;
+
+}
+.car{
+    width: 18%;
+    margin-left: 1rem;
+}
+.scooter{
+    width: 18%;
+    margin-left: 1rem;
+}
+
+.featured h1{
+    color: black;
+    width: 59%;
+}
+.gb{
+    width: 54% !important;
+}
+.glasses{
+    background-image: url(./ASSETS/too-cool-1200.jpg) !important;
+    /* width: 38%; */
+}
+.ic{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+} 
+footer{
+    flex-direction: row;
+}
+.connect{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adr{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.fi{
+    display: flex;
+}
+}
+  

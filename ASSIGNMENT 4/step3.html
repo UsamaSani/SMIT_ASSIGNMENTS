@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step3</title>
+</head>
+<body>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li{
+            list-style: none;
+            margin: 1rem;
+            background-color: grey;
+            padding: 1rem;
+            font-weight: bolder;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 50%;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 1px solid #e3c60d;
+            margin-bottom: 0.5rem;
+
+        }
+        select{
+            width: 51%;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 1px solid #e3c60d;
+            margin-bottom: 0.5rem;
+        }
+        fieldset{
+            border: 2px solid #e3c60d;
+        }
+        legend{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        label{
+            font-weight: bolder;
+        }
+
+        .blue{
+            background-color: rgb(0, 123, 255);
+            color: white;
+        }
+        .btn{
+            display: flex;
+            flex-direction: initial;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            background-color: rgb(4, 107, 4);
+            padding: 1rem;
+            margin-left: 1rem;
+            border-radius: 1rem;
+        }
+        .green{
+            background-color: rgb(4, 107, 4);
+            color: white;
+        }
+        .radio{
+            display: flex;
+            flex-direction: initial;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .rspace{
+            margin-left: 1rem;
+        }
+    </style>
+    <div>
+    <ul>
+        <li class="green">Step1: Account</li>
+        <li class="green">Step2: Personal Details</li>
+        <li class="blue">Step3: Your Review</li>
+    </ul>
+<fieldset>
+    <legend>Your Review</legend>
+        <form action="">
+            <label for="select">How did you heared about us*</label>
+            <select name="" id="select">
+                <option value="">Select options</option>
+                <option value="">Social Media</option>
+                <option value="">News</option>
+                <option value="">News Paper</option>
+                <option value="">Family/Friends</option>
+            </select>
+            <label for="visit">Would you vist Again</label>
+            <div class="radio">
+            <input type="radio" name="visit" id="yes" class="rspace"><label for="yes">YES</label>
+            <input type="radio" name="visit" id="no" class="rspace"><label for="no">NO</label>
+            <input type="radio" name="visit" id="maybe" class="rspace"><label for="maybe">MAYBE</label>
+        </div>
+            <label for="comment">Comments*</label>
+            <input type="text"  id="comment" placeholder="Write your thoughts About Us">
+            <label for="document">Documents*</label>
+            <input type="file"  id="document" class="file">
+            <div class="btn">
+            <a href="./step2.html">Back</a>
+            <a href="./thankyou.html">Submit</a>
+           </div>
+        </form>
+</fieldset>
+</div>
+</body>
+</html>

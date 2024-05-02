@@ -1,0 +1,25 @@
+@media screen and (min-width:650px) {
+ .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+ .btn-b{
+   transition: background-color 0.3s ease;
+   border-radius: 0.5rem;
+ }
+ .btn-b:hover{
+   cursor: pointer;
+background-color:  #363636;
+color: white;
+ }
+ figure{
+    width: 30%;
+    margin: 1rem;
+ }
+ .book{
+   height: 26rem;
+   margin-top: 1rem;
+ }
+}

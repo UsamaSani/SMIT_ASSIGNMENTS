@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Mass Training & Job Program</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .form-group {
+            width: 48%;
+            margin: 1%;
+        }
+.widthfull{
+    width: 100%;
+}
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-style: none;
+            border-bottom: 1px solid;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        #submit{
+            background-color: rgb(0, 85, 255);
+            margin-top: 1rem;
+            color: white;
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+        a{
+            text-decoration: none;
+            margin: 1rmem;
+            padding: 1rem;
+            background-color: rgb(0, 85, 255);
+            color: white;
+            border-radius: 4rem;
+            cursor: pointer;
+        }
+        nav{
+            margin: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">ASSIGNMENT #01</a>
+            <a href="./PeriodicTable.html">ASSIGNMENT #02</a>
+        </nav>
+        <img src="./images/saylani logo.png" alt="Saylani Logo" width="200">
+        <h1>Saylani Mass Training & Job Program</h1>
+        <h2>Registration/Entry Test Form</h2>
+    </header>
+
+    <form action="#">
+        <div class="form-group">
+            <label for="course">Select Your Course*</label>
+            <select name="course" id="course">
+                <option value="graphic">Graphic Designing</option>
+                <option value="web">Web Development</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="batch">Select Batch*</label>
+            <select name="batch" id="batch">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+
+        <div class="form-group widthfull">
+            <input type="text" placeholder="Your Name*" id="name">
+            <label for="name">Max characters allowed: 18</label>
+        </div>
+        <div class="form-group">
+            <label for="DOB">DATE OF BIRTH*</label>
+            <input type="date" id="DOB">
+        </div>
+        <div class="form-group">
+            <label for="age">YOUR AGE*</label>
+            <input type="number" id="age">
+        </div>
+        <div class="form-group widthfull">
+            <input type="number" placeholder="CNIC / B-FORM *" id="cnic">
+            <label for="cnic">eg : 4220123456789</label>
+        </div>
+        <div class="form-group widthfull">
+            <input type="text" placeholder="FATHER NAME*">
+        </div>
+        <div class="form-group widthfull">
+            <input type="number" placeholder="FATHER's/ GUARDIAN CNIC *" id="fcnic">
+            <label for="fcnic">eg : 4220123456789</label>
+        </div>
+        <div class="form-group widthfull">
+            <input type="text" placeholder="FULL & PERMANENT ADRESS*" >
+        </div>
+        <div class="form-group widthfull">
+            <input type="number" placeholder="CELL NUMBER*" id="cell">
+            <label for="cell">eg :090078601</label>
+        </div>
+        <div class="form-group widthfull">
+            <input type="email" placeholder="EMAIL*" id="email">
+            <label for="email">Provide valid and accessible that we use to contact you</label>
+        </div>
+        <div class="form-group widthfull">
+            <center><label for="qualification">LAST QUALIFICATION*</label></center>
+            <label for="none">NONE</label><input type="radio" id="none" name="qualification">
+            <label for="matric">MATRIC</label><input type="radio" id="matric" name="qualification">
+            <label for="inter">INTERMEDIATE</label><input type="radio" id="inter" name="qualification">
+            <label for="bachlors">BACHELORS</label><input type="radio" id="bachlors" name="qualification">
+            <label for="master">MASTER</label><input type="radio" id="master" name="qualification">
+            <label for="phd">PHD</label><input type="radio" id="phd" name="qualification">
+        </div>
+        <div class="form-group widthfull">
+            <label for="file">Upload your recent image (facr front without glasses and with a single-colored background)*</label>
+            <input type="file"  id="file" placeholder="choose file">
+            only png or jpg with size 1mb allowed
+        </div>
+        <div class="form-group widthfull">
+            <label for="time">AVAILIBILITY*</label>
+            <select name="time" id="time">
+                <option value="mon">monday 3pm to 5pm</option>
+                <option value="tues">tuesday 3pm to 5pm</option>
+                <option value="wed">Wednesday 3pm to 5pm</option>
+            </select>
+        </div>
+        <div class="form-group widthfull">
+            <label for="DEC">DECLARATION UNDERTAKINT*</label>
+            <ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus alias reiciendis? Natus distinctio, possimus sint dolore asperiores quidem quo alias! Ea sequi ipsa rem doloremque consequatur. Vitae, voluptatum neque!</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium voluptatem quod aut perferendis animi nemo? Nesciunt iure dolores quasi ipsum non et in fugiat porro, deserunt est possimus expedita.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repudiandae tempore ea ex libero mollitia voluptatem! Accusantium ducimus dolore saepe earum vero? Laboriosam repellendus quae provident sed fuga. Facilis, inventore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, esse nemo blanditiis dicta harum possimus quos, quisquam, alias ipsum inventore voluptas ullam at asperiores doloribus veritatis incidunt tempora. Officia, magni.</li>
+            </ol>
+        </div>
+        <div><input type="checkbox" id="DEC"> I Agree with the above terms</div>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>

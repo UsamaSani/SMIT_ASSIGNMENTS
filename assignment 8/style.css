@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    color: silver;
+    text-align: center;
+}
+li{
+padding: 0.5rem;
+font-weight: bolder;
+}
+li:hover{
+    color: rgb(0, 81, 255);
+    cursor: pointer;
+}
+.heading{
+    text-align: center;
+    font-weight: bolder;
+}
+.heading p{
+    color: gray;
+}
+.heading h1{
+    font-size: 2.2rem;
+}
+.secondlist{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.secondlist li:hover{
+background-color: rgba(99, 99, 99, 0.429);
+}
+.search{
+    display: flex;
+}
+.sear{
+    width: 6rem;
+    border: none;
+    text-align: center;
+}
+hr{
+    background-color: black;
+    margin: 1rem;
+}
+section h1,p{
+    padding: 0.5rem;
+
+}
+.img{
+    margin: 0.5rem;
+}
+img{
+    width: 100%;
+}
+.blue{
+    color: rgb(0, 81, 255);
+    cursor: pointer;
+}
+form{
+    margin: 0.5rem;
+    text-align: center;
+}
+.c{
+    margin: 0.5rem;
+}
+.red{
+    color: red;
+}
+.info{
+    margin: 0.5rem;
+    padding: 1rem;
+    border:1px solid gray;
+}
+textarea{
+    padding: 1rem;
+}
+.btn{
+    padding: 1rem;
+}
+.icon{
+    width: 1.5rem;
+    /* filter: grayscale(100%); */
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+}
+footer p{
+    color: silver;
+}
+@media screen and (min-width: 700px){
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav{
+    padding: 1rem;
+    
+}
+section{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 6rem;
+}
+}
